@@ -1,0 +1,136 @@
+{
+  "identity": {
+    "name": "E1",
+    "persona": "The Anti-AI Designer",
+    "mission": "Create a food analysis interface that feels like a high-end bio-lab, not a generic SaaS.",
+    "principles": [
+      "Fusion: Whole Foods Organic meets Sci-Fi HUD",
+      "Emotion: Trust through radical transparency",
+      "Content: Data is the hero, styling is the stage",
+      "Zoom: Macro photography of ingredients",
+      "Negative Space: Breathable lists"
+    ]
+  },
+  "design_system": {
+    "theme_name": "Bio-Truth",
+    "typography": {
+      "headings": {
+        "family": "Outfit, sans-serif",
+        "weights": ["300", "500", "700"],
+        "usage": "Use for all section titles, product names, and NutriScore grades. Letter-spacing: -0.02em."
+      },
+      "body": {
+        "family": "Public Sans, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Use for ingredient lists, health descriptions, and chatbot responses. High legibility focus."
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "Use for specific chemical names, E-numbers, and barcode digits."
+      }
+    },
+    "colors": {
+      "palette_strategy": "Archetype 1: Organic & Earthy (with Electric Accents)",
+      "light_mode": {
+        "background": "#FFFFFF",
+        "foreground": "#1A202C",
+        "primary": "#143D24",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#D9F99D",
+        "secondary_foreground": "#143D24",
+        "accent": "#F2F4F1",
+        "accent_foreground": "#143D24",
+        "muted": "#F8FAF8",
+        "muted_foreground": "#64748B",
+        "border": "#E2E8F0",
+        "input": "#E2E8F0",
+        "ring": "#143D24",
+        "risk_high": "#FECACA",
+        "risk_moderate": "#FEF08A",
+        "risk_low": "#D9F99D"
+      },
+      "dark_mode": {
+        "background": "#0A120D",
+        "foreground": "#F2F4F1",
+        "primary": "#D9F99D",
+        "primary_foreground": "#0A120D",
+        "secondary": "#143D24",
+        "secondary_foreground": "#D9F99D",
+        "accent": "#1A261E",
+        "accent_foreground": "#D9F99D",
+        "muted": "#1A261E",
+        "muted_foreground": "#94A3B8",
+        "border": "#23362B",
+        "input": "#23362B",
+        "ring": "#D9F99D",
+        "risk_high": "#7F1D1D",
+        "risk_moderate": "#713F12",
+        "risk_low": "#14532D"
+      }
+    },
+    "spacing": {
+      "scale": "Generous. Use p-6 or p-8 for cards. Gap-6 for grids.",
+      "container_padding": "px-4 md:px-8 lg:px-12",
+      "section_spacing": "py-16 or py-24"
+    },
+    "layout": {
+      "grid_system": "Bento Grid (Mode A for Dashboard)",
+      "rules": [
+        "NutriScore Card: col-span-full md:col-span-1 row-span-2 (Tall)",
+        "Ingredients List: col-span-full md:col-span-2 row-span-2 (Scrollable)",
+        "Health Impact Summary: col-span-full (Wide)",
+        "Chatbot: Fixed bottom-right or Slide-over panel"
+      ]
+    },
+    "components": {
+      "cards": {
+        "style": "Flat with 1px border. No shadow in Light Mode. Subtle glow in Dark Mode.",
+        "border_radius": "rounded-xl",
+        "padding": "p-6"
+      },
+      "buttons": {
+        "primary": "Pill-shaped (rounded-full). High contrast. Hover: scale-105 transition-transform.",
+        "secondary": "Ghost style with border. Hover: bg-accent."
+      },
+      "inputs": {
+        "style": "Minimalist. Bottom border only for search, full box for forms. Large text (text-lg)."
+      },
+      "nutriscore": {
+        "style": "Custom component. Do not use standard images. Recreate using CSS blocks (A-E) with active state glowing."
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "Use backdrop-blur-xl for the Scanner Overlay and Sticky Nav.",
+      "textures": "Add a subtle noise texture to the background in Dark Mode to prevent banding.",
+      "motion": "Staggered entrance for ingredient list items. Pulse animation for 'High Risk' ingredients."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1766228271606-f2d7bdbb9db3?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "scanner_context": "https://images.unsplash.com/photo-1683840567064-e430df9f5ed6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "trust_indicator": "https://images.unsplash.com/photo-1588503933066-17f7916ca74c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "healthy_ingredients": "https://images.unsplash.com/photo-1591189863430-ab87e120f312?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": "Use lucide-react. Preferred icons: Scan, Leaf, AlertTriangle, Activity, MessageCircle, ChevronRight."
+  },
+  "implementation_steps": {
+    "step_1": "Update tailwind.config.js with the Bio-Truth color palette and font families.",
+    "step_2": "Create a global Layout component that handles the noise texture and responsive container.",
+    "step_3": "Build the 'NutriScoreBadge' component using CSS grid and colors.",
+    "step_4": "Implement the 'ScannerOverlay' with a viewfinder frame using absolute positioning and z-index.",
+    "step_5": "Develop the 'IngredientRiskList' with accordion functionality for detailed health impacts."
+  },
+  "universal_guidelines": {
+    "do_not": [
+      "Do not use gradients for text.",
+      "Do not use default Shadcn shadows (too subtle).",
+      "Do not center text in the ingredient list."
+    ],
+    "must_do": [
+      "Use data-testid for all interactive elements.",
+      "Ensure text contrast meets APCA standards.",
+      "Use 'sonner' for all toast notifications."
+    ]
+  }
+}
