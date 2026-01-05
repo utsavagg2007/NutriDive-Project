@@ -1,36 +1,35 @@
-#🥗 NutriDive
+# 🥗 NutriDive
 
-NutriDive is a full-stack nutrition analysis application that scans food barcodes to provide detailed ingredient breakdowns and nutritional data, powered by AI insights to help users make informed dietary choices.
+**NutriDive** is a full-stack nutrition analysis application that scans food barcodes to provide detailed ingredient breakdowns and nutritional data. Powered by AI insights, it helps users make informed dietary choices by translating complex labels into actionable health information.
 
-##🚀 Features
-📷 Barcode Scanning – Instantly fetch product data from packaged foods.
+## 🚀 Features
 
-🧾 Ingredient Breakdown – Detailed, easy-to-read lists of what’s actually in your food.
+* 📷 **Barcode Scanning** – Instantly fetch product data from packaged foods.
+* 🧾 **Ingredient Breakdown** – Detailed, easy-to-read lists of what’s actually in your food.
+* 🍎 **Nutritional Information** – Comprehensive data on calories, macros, and micronutrients.
+* 🤖 **AI Insights** – Smart analysis regarding health impact, allergen warnings, and healthier alternatives.
 
-🍎 Nutritional Information – Comprehensive data on calories, macros, and micronutrients.
+## 🏗️ Tech Stack
 
-🤖 AI Insights – Smart analysis regarding health impact, allergen warnings, and healthier alternatives.
+* **Frontend:** React (JavaScript), Yarn
+* **Backend:** Python, FastAPI, Uvicorn
+* **Database:** MongoDB
+* **AI:** OpenAI API
 
-##🏗️ Tech Stack
-Frontend: React (JavaScript), Yarn
+---
 
-Backend: Python, FastAPI, Uvicorn
+## 📂 Project Structure
 
-Database: MongoDB
-
-AI: OpenAI API
-
-##📂 Project Structure
-    Plaintext
-    
+    plaintext
     ├── frontend/          # React UI components and logic
     ├── backend/           # FastAPI server, AI logic, and DB connection
     └── README.md          # Project documentation
 
-##🖥️ Getting Started
+  🖥️ Getting Started
 1️⃣ Clone the Repository
 Bash
-git clone https://github.com/utsavagg2007/NutriDive-Project.git
+
+git clone [https://github.com/utsavagg2007/NutriDive-Project.git](https://github.com/utsavagg2007/NutriDive-Project.git)
 cd NutriDive-Project
 2️⃣ Backend Setup
 Navigate to the backend directory, set up a virtual environment, and install dependencies:
@@ -70,7 +69,7 @@ Code snippet
 
 REACT_APP_BACKEND_URL=http://localhost:8001
 ▶️ Running the Application
-Ensure your MongoDB service is running locally at localhost:27017.
+Ensure MongoDB is running locally at localhost:27017.
 
 Start Backend:
 
@@ -93,7 +92,7 @@ AI Analysis: Post-processed nutritional insights via OpenAI.
 
 History: Fetch previously scanned items (if logged in).
 
-##📌 Future Enhancements
+📌 Future Enhancements
 👤 User Profiles: Save scan history and dietary preferences.
 
 🎯 Goal Tracking: Recommendations based on weight loss or muscle gain.
