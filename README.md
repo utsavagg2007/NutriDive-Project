@@ -1,102 +1,103 @@
 🥗 NutriDive
-
-A full-stack nutrition analysis application that scans food barcodes and provides detailed ingredient and nutritional information, along with AI-powered insights to help users make healthier choices.
+NutriDive is a full-stack nutrition analysis application that scans food barcodes to provide detailed ingredient breakdowns and nutritional data, powered by AI insights to help users make informed dietary choices.
 
 🚀 Features
+📷 Barcode Scanning – Instantly fetch product data from packaged foods.
 
-📷 Barcode Scanning – Scan packaged food barcodes to fetch product data
+🧾 Ingredient Breakdown – Detailed, easy-to-read lists of what’s actually in your food.
 
-🧾 Ingredient Breakdown – View ingredients with clarity
+🍎 Nutritional Information – Comprehensive data on calories, macros, and micronutrients.
 
-🍎 Nutritional Information – Calories, macros, and other key nutrients
-
-🤖 AI Insights – Smart analysis of the product (health impact, warnings, suggestions)
+🤖 AI Insights – Smart analysis regarding health impact, allergen warnings, and healthier alternatives.
 
 🏗️ Tech Stack
-Frontend
+Frontend: React (JavaScript), Yarn
 
-JavaScript / React
+Backend: Python, FastAPI, Uvicorn
 
-Yarn for package management
+Database: MongoDB
 
-Backend
-
-Python
-
-FastAPI
-
-Uvicorn
+AI: OpenAI API
 
     📂 Project Structure
-    ├── frontend/
-    │   └── (UI code)
-    │
-    ├── backend/
-    │   ├── server.py
-    │   └── (API & AI logic)
-    │
-    └── README.md
-
+    Plaintext
+    
+    ├── frontend/          # React UI components and logic
+    ├── backend/           # FastAPI server, AI logic, and DB connection
+    └── README.md          # Project documentation
 🖥️ Getting Started
 1️⃣ Clone the Repository
+Bash
+
 git clone https://github.com/utsavagg2007/NutriDive-Project.git
+cd NutriDive-Project
+2️⃣ Backend Setup
+Navigate to the backend directory, set up a virtual environment, and install dependencies:
 
-cd your-repo-name
+Bash
 
+cd backend
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+pip install -r requirements.txt
+3️⃣ Frontend Setup
+Install the necessary packages using Yarn:
+
+Bash
+
+cd ../frontend
+yarn install
+4️⃣ Environment Configuration
+Create .env files in both directories to store your credentials:
+
+Backend (backend/.env):
+
+Code snippet
+
+MONGO_URL=mongodb://localhost:27017
+DB_NAME=nutridive_db
+OPENAI_API_KEY=your_openai_api_key_here
+Frontend (frontend/.env):
+
+Code snippet
+
+REACT_APP_BACKEND_URL=http://localhost:8001
 ▶️ Running the Application
-🔹 Frontend
+Ensure your MongoDB service is running locally at localhost:27017.
 
-Navigate to the frontend directory and start the app:
+Start Backend:
 
-yarn start
+Bash
 
-
-The frontend will launch in your browser (usually at http://localhost:3000).
-
-🔹 Backend
-
-Navigate to the backend directory and run:
-
+cd backend
 uvicorn server:app --reload --port 8001
+Start Frontend:
 
+Bash
 
-The API will be available at:
-
-http://localhost:8001
+cd frontend
+yarn start
+The app will be available at http://localhost:3000.
 
 🔗 API Overview
+Barcode Lookup: Retrieve product data via GTIN/Barcode.
 
-Barcode scanning endpoint
+AI Analysis: Post-processed nutritional insights via OpenAI.
 
-Nutrition & ingredient data retrieval
-
-AI-powered analysis and insights
-
-(You can expand this section later with actual endpoints.)
-
-🧠 AI Insights
-
-The AI analyzes:
-
-Ingredient quality
-
-Nutritional balance
-
-Potential health concerns
-
-Overall food rating or recommendations
+History: Fetch previously scanned items (if logged in).
 
 📌 Future Enhancements
+👤 User Profiles: Save scan history and dietary preferences.
 
-User profiles & history
+🎯 Goal Tracking: Recommendations based on weight loss or muscle gain.
 
-Health goal-based recommendations
-
-Mobile app support
-
-Multi-language support
-
+📱 Mobile App: React Native support for easier on-the-go scanning.
 
 📄 License
-
 This project is licensed under the MIT License.
