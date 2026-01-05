@@ -27,15 +27,15 @@ FastAPI
 
 Uvicorn
 
-📂 Project Structure
-├── frontend/
-│   └── (UI code)
-│
-├── backend/
-│   ├── server.py
-│   └── (API & AI logic)
-│
-└── README.md
+    📂 Project Structure
+    ├── frontend/
+    │   └── (UI code)
+    │
+    ├── backend/
+    │   ├── server.py
+    │   └── (API & AI logic)
+    │
+    └── README.md
 
 🖥️ Getting Started
 1️⃣ Clone the Repository
