@@ -1,7 +1,8 @@
-🥗 NutriDive
+#🥗 NutriDive
+
 NutriDive is a full-stack nutrition analysis application that scans food barcodes to provide detailed ingredient breakdowns and nutritional data, powered by AI insights to help users make informed dietary choices.
 
-🚀 Features
+##🚀 Features
 📷 Barcode Scanning – Instantly fetch product data from packaged foods.
 
 🧾 Ingredient Breakdown – Detailed, easy-to-read lists of what’s actually in your food.
@@ -10,7 +11,7 @@ NutriDive is a full-stack nutrition analysis application that scans food barcode
 
 🤖 AI Insights – Smart analysis regarding health impact, allergen warnings, and healthier alternatives.
 
-🏗️ Tech Stack
+##🏗️ Tech Stack
 Frontend: React (JavaScript), Yarn
 
 Backend: Python, FastAPI, Uvicorn
@@ -19,16 +20,16 @@ Database: MongoDB
 
 AI: OpenAI API
 
-    📂 Project Structure
+##📂 Project Structure
     Plaintext
     
     ├── frontend/          # React UI components and logic
     ├── backend/           # FastAPI server, AI logic, and DB connection
     └── README.md          # Project documentation
-🖥️ Getting Started
+
+##🖥️ Getting Started
 1️⃣ Clone the Repository
 Bash
-
 git clone https://github.com/utsavagg2007/NutriDive-Project.git
 cd NutriDive-Project
 2️⃣ Backend Setup
@@ -92,7 +93,7 @@ AI Analysis: Post-processed nutritional insights via OpenAI.
 
 History: Fetch previously scanned items (if logged in).
 
-📌 Future Enhancements
+##📌 Future Enhancements
 👤 User Profiles: Save scan history and dietary preferences.
 
 🎯 Goal Tracking: Recommendations based on weight loss or muscle gain.
